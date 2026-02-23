@@ -1,0 +1,50 @@
+:root {
+    --aura-dark: #003366;
+    --aura-light: #00d4ff;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+/* LOGO & BRAND COLORS */
+.brand-dark { color: var(--aura-dark); }
+.brand-light { color: var(--aura-light); }
+
+.logo-box {
+    background: linear-gradient(135deg, var(--aura-dark), var(--aura-light));
+    color: white; width: 42px; height: 42px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 10px; font-size: 1.3rem;
+    box-shadow: 0 4px 10px rgba(0, 212, 255, 0.3);
+}
+
+/* NAVIGATION */
+.custom-nav {
+    font-size: 0.85rem; font-weight: 700;
+    color: var(--aura-dark) !important; letter-spacing: 1px;
+}
+.custom-nav:hover { color: var(--aura-light) !important; }
+
+.btn-aura-gradient {
+    background: linear-gradient(to right, var(--aura-dark), var(--aura-light));
+    font-weight: 600; border: none; transition: 0.3s;
+}
+.btn-aura-gradient:hover { transform: scale(1.05); color: white; }
+
+/* HERO TEXT */
+.shadow-text { line-height: 1.8; font-size: 1.05rem; }
+.bg-soft-blue { background-color: #e6faff; padding: 6px 18px; border-radius: 50px; }
+
+/* GALLERY SIZE */
+.small-gallery { height: 420px; object-fit: cover; }
+
+/* INTERACTIVITY */
+.pricing-card { border-radius: 20px; transition: 0.4s; }
+.pricing-card:hover { transform: translateY(-10px); }
+.featured { transform: scale(1.05); }
+
+@media (max-width: 768px) {
+    .small-gallery { height: 300px; }
+}
